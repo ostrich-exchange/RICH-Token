@@ -6,7 +6,7 @@ import "../src/RichToken.sol";
 
 contract DeployRich is Script {
     function run() external {
-        uint256 forkId = vm.createFork("https://base-mainnet.public.blastapi.io");
+        uint256 forkId = vm.createFork("https://arbitrum.drpc.org");
         vm.selectFork(forkId);
         vm.startBroadcast(vm.envUint("PRIVATE_KEY_ADMIN"));
 
